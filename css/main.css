@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'RofiTaste';
+  src: url("../fonts/RofiTaste.eot");
+  src: url("../fonts/RofiTaste.eot?iefix") format("eot"), url("../fonts/RofiTaste.woff") format("woff"), url("../fonts/RofiTaste.ttf") format("truetype"), url("../fonts/RofiTaste.svg#webfont") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px; }
+
+img.logotype {
+  width: 80px;
+  fill: #888; }
+
+.logo-text {
+  color: #2b441f;
+  font-size: 24px;
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  padding-top: 5px; }
+
+.intro {
+  height: 500px;
+  background: #60929a url(../img/main_bg_005.jpg) repeat-y center center;
+  color: #ffffff;
+  background-size: cover;
+  text-align: center;
+  /*position: relative;*/ }
+  .intro h1.intro-header {
+    font-family: 'RofiTaste';
+    font-size: 84px;
+    margin: 0 auto;
+    padding-top: 100px; }
+  .intro p.intro-text {
+    font-size: 24px;
+    font-weight: 300;
+    padding-top: 10px; }
+
+.navbar-default {
+  background-color: #ffffff;
+  border: 0 none; }
+
+.main-head-menu {
+  margin: 20px 0; }
+
+*, *:before, *:after {
+  box-sizing: border-box !important; }
+
+h2.section-header {
+  color: #2b441f;
+  margin-top: 125px;
+  margin-bottom: 30px; }
+
+.masonry {
+  -moz-column-width: 21em !important;
+  -webkit-column-width: 21em !important;
+  -moz-column-gap: 1em !important;
+  -webkit-column-gap: 1em !important; }
+  .masonry .masonry-item {
+    display: inline-block;
+    padding: .25rem;
+    width: 100%; }
+
+.well {
+  position: relative;
+  display: block;
+  padding: 10px !important;
+  background: none;
+  border: 0 none;
+  text-align: left; }
+  .well img {
+    max-width: 100%;
+    height: auto;
+    display: block; }
+  .well .masonry-item-date {
+    color: #9d9d9d;
+    margin-top: 10px; }
+  .well .item-announce {
+    color: #2b441f; }
+
+/* masonry script */
+.grid-sizer,
+.grid-item {
+  width: 22%;
+  margin-bottom: 10px; }
+
+/* 2 columns wide */
+.gutter-sizer {
+  width: 4%; }
+
+.grid-item--width2 {
+  width: 48%; }
+
+.blog-img-prev {
+  width: 100%;
+  display: block; }
+
+.insta-item img {
+  display: block;
+  width: 100%; }
+
+.social-icons {
+  font-size: 1.5em;
+  padding-top: 110px;
+  padding-bottom: 20px; }
+  .social-icons a {
+    color: #2b441f;
+    filter: alpha(opacity=30);
+    -moz-opacity: 30;
+    -khtml-opacity: 30;
+    opacity: 30;
+    ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$s)"; }
+  .social-icons a:hover {
+    filter: alpha(opacity=100);
+    -moz-opacity: 100;
+    -khtml-opacity: 100;
+    opacity: 100;
+    ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$s)"; }
+
+.copyright {
+  padding-bottom: 20px; }

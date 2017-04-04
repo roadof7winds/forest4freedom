@@ -1,0 +1,192 @@
+//главные стили
+@font-face{
+	font-family: 'RofiTaste';
+	src: url('../fonts/RofiTaste.eot');
+	src: url('../fonts/RofiTaste.eot?iefix') format('eot'),
+	url('../fonts/RofiTaste.woff') format('woff'),
+	url('../fonts/RofiTaste.ttf') format('truetype'),
+	url('../fonts/RofiTaste.svg#webfont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+$font-family: 'Open Sans', sans-serif;
+$font-family-header: 'Playfair Display', serif;
+$font-size: 12px;
+$font-weight: 300;
+$mainTextColor: #21221d;
+$InvertColor: #ffffff;
+$accentColor: #2b441f;
+
+@mixin transparent($s) {
+	filter: alpha(opacity=$s);
+	-moz-opacity: $s;
+	-khtml-opacity: $s;
+	opacity: $s;
+	ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$s)";
+}
+
+@mixin borderRadius($r) {
+	-moz-border-radius: $r;
+  	-webkit-border-radius: $r;
+    border-radius: $r;
+    -ms-border-radius: $r; 
+}
+
+@mixin transition($property, $duration, $delay, $timefunc) {
+	webkit-transition: $property, $duration, $delay, $timefunc;
+    -moz-transition: $property, $duration, $delay, $timefunc;
+    -o-transition: $property, $duration, $delay, $timefunc;
+    -ms-transition: $property, $duration, $delay, $timefunc;
+    transition: $property, $duration, $delay, $timefunc;
+}
+
+@mixin boxSizing($property) {
+	box-sizing: $property;
+	-moz-box-sizing: $property; 
+	-webkit-box-sizing: $property; 
+}
+
+@mixin border($place, $color, $width) {
+	 @if $place == 'all' {
+	 border: $width solid $color;
+	 } @else {
+	 border-#{$place}: $width solid $color;
+	 }
+}
+
+body {
+	font-family: $font-family;
+	font-size: $font-size;
+}
+
+.logo{
+
+}
+img.logotype {
+	width: 80px;
+	fill: #888;
+}
+
+.logo-text {
+	color:$accentColor;
+	font-size: $font-size*2;
+	display: inline-block;
+	font-family: $font-family;
+	padding-top: 5px;
+}
+.intro {
+	height: 500px;
+	background: #60929a url(../img/main_bg_005.jpg) repeat-y center center;
+	color: $InvertColor;
+	background-size: cover;
+	text-align: center;
+	/*position: relative;*/
+	h1.intro-header {
+		font-family: 'RofiTaste';
+		font-size: $font-size*7;
+		margin: 0 auto;
+    	padding-top: 100px;
+	}
+	p.intro-text {
+		font-size: $font-size*2;
+		font-weight: 300;
+		padding-top: 10px;
+		
+	}
+}
+
+.navbar-default {
+    background-color: #ffffff;
+    border: 0 none;
+}
+
+.main-head-menu {
+	margin: 20px 0;
+}
+
+
+*, *:before, *:after {box-sizing:  border-box !important;}
+
+h2.section-header {
+	color: $accentColor;
+	margin-top: 125px;
+    margin-bottom: 30px;
+}
+
+.masonry {
+ -moz-column-width: 21em !important;
+ -webkit-column-width: 21em !important;
+ -moz-column-gap: 1em !important;
+ -webkit-column-gap:1em !important; 
+  	.masonry-item {
+		 display: inline-block;
+		 padding:  .25rem;
+		 width:  100%; 
+		}
+}
+
+
+.well {
+	 position:relative;
+	 display: block;
+	 padding: 10px !important;
+	 background: none;
+	 border: 0 none;
+	 text-align: left;
+
+	 img {
+		max-width: 100%;
+		height: auto;
+		display: block;
+		}
+	.masonry-item-date {
+		color: #9d9d9d;
+		margin-top: 10px;
+		}
+	.item-announce {
+		color: $accentColor;
+	}
+}
+
+
+/* masonry script */
+.grid-sizer,
+.grid-item { width: 22%;  margin-bottom: 10px;}
+/* 2 columns wide */
+.gutter-sizer { width: 4%; }
+.grid-item--width2 { width: 48%; }
+
+
+.blog-img-prev {
+	width: 100%;
+	display: block;
+}
+
+.insta-item {
+	
+	img {
+		display: block;
+		width: 100%;
+	}
+}
+
+.social-icons {
+	font-size: 1.5em;
+	padding-top: 110px;
+	padding-bottom: 20px;
+
+	a {
+	color: $accentColor;
+	@include transparent(30);
+	}   
+
+	a:hover {
+	@include transparent(100);
+	}
+}
+.copyright {
+	padding-bottom: 20px;
+}
+
+
